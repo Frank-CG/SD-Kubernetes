@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ejabberd-frank-test
+  labels:
+    app: ejabberd-frank-test
+spec:
+  containers:
+    - name: ejabberd-frank-test
+      image: ejabberd/ecs
+      ports:
+        - containerPort: 5222
+        - containerPort: 5280
+        
